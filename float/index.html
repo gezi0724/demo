@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float浮动演示</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 50px;
+            background-color: red;
+        }
+        .box2{
+            width: 300px;
+            height: 50px;
+            background-color: black;
+            float: right;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: right;
+        }
+        .box4{
+            width: 600px;
+            height: 60px;
+            background-color: violet;
+            clear: both;
+        }
+        .nav{
+            width: 404px;
+            height: 50px;
+            border: 1px solid #CCC;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .item{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            list-style: none;
+            border-right: 1px solid #CCC;
+            float: left;
+        }
+        .last{
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <ul class="nav">
+        <li class="item">css</li>
+        <li class="item">html</li>
+        <li class="item">js</li>
+        <li class="item last">vue</li>
+    </ul>
+</body>
+</html>
