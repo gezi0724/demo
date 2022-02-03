@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery学习</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        #title {
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">我正在学习jquery</div>
+    <button id="btn">按钮</button>
+    <button id="show">显示</button>
+    <script>
+
+        var btnNode = document.getElementById("btn");
+        var showNode = document.getElementById("show");
+        var titleNode = document.getElementById("title");
+        btnNode.onclick = function () {
+            titleNode.style.display = "none";
+        }
+        showNode.onclick = function () {
+            titleNode.style.display = "block";
+        }
+        //  $("#btn").click(function(){
+        //      $("#title").hide();
+        //  })
+        //  $("#show").click(function(){
+        //      $("#title").show();
+        //  })
+    </script>
+</body>
+
+</html>
